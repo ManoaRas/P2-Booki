@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/d04d37ffe8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <header class="head">
+      <a href="#">
+        <img src="assets/logo/Booki.png" alt="Logo Booki" class="logo-booki">
+      </a>
+      <nav class="menu">
+        <a href="#" class="menu-info">Hébergements</a>
+        <a href="#" class="menu-info">Activités</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p style="margin-top: 8px;">En plein centre-ville ou en pleine nature</p>
+        <form action="#">
+          <label for="city">
+            <i class="fa-solid fa-location-dot" type="text" name="search"></i>
+          </label>
+          <input type="search"
+            id="city"
+            name="city"
+            placeholder="Marseille, France" />
+          <button class="search search-button">Rechercher</button>
+          <button class="search search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="filters">
+          <h3>Filtres</h3>
+          <form action="#" class="filters-form">
+
+            <input type="checkbox" id="economic" name="economic" value="Économique" class="checkbox">
+            <label for="economic" class="filters-list">
+              <i class="fa-solid fa-money-bill-wave filters-icons"></i>
+              Économique
+            </label>
+
+            <input type="checkbox" id="family" name="family" value="Familial" class="checkbox">
+            <label for="family" class="filters-list">
+                <i class="fa-solid fa-person filters-icons"></i>
+                Familial
+            </label>
+
+            <input type="checkbox" id="romance" name="romance" value="Romantique" class="checkbox">
+            <label for="romance" class="filters-list">
+                <i class="fa-solid fa-heart filters-icons"></i>
+                Romantique
+            </label>
+
+            <input type="checkbox" id="pets" name="pets" value="Animaux autorisés" class="checkbox">
+            <label for="pets" class="filters-list">
+              <i class="fa-solid fa-dog filters-icons"></i>
+              Animaux autorisés
+            </label>
+
+          </form>
+        </div>
+        <div class="info">
+          <p class="info-bull"><i class="fa-solid fa-info"></i></p>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+      </section>
+
+      <article class="cards-hebergement">
+        <section>
+          <h2>Hébergements à Marseille</h2>
+          <div class="cards">
+
+            <div class="card">
+              <a href="#">
+                <img src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                <div class="card-product">
+                  <h4>Auberge La Canebière</h4>
+                  <p>Nuit à partir de 25€</p>
+                  <ul class="star">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberbe Le Panier">
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img src="assets/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina">
+              </a>
+            </div>
+
+          </div>
+          <h3>Afficher plus</h3>
+        </section>
+
+        <aside>
+          <div class="card">
+            <a href="#">
+              <img src="assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+              <div class="card-product">
+                <h4>Auberge La Canebière</h4>
+                <p>Nuit à partir de 25€</p>
+                <ul class="star">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </aside>
+
+        <section>
+
+        </section>
+      </article>
+    </main>
+
+<!--<i class="fa-solid fa-dog"></i>
+    <i class="fa-solid fa-info"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-person"></i>
+    <i class="fa-solid fa-chart-line"></i>
+    <i class="fa-solid fa-location-dot"></i>
+    <i class="fa-solid fa-money-bill-wave"></i>
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-magnifying-glass"></i> -->
+  </body>
+</html>

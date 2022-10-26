@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Body */
+
+body {
+  margin: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+/* Header */
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-booki {
+  padding-top: 20px;
+  width: 62px;
+  height: 21px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-info{
+  font-size: 16px;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+.menu-info:focus {
+  border-top: 1px solid #0065FC;
+  padding: 19px;
+}
+
+/* Main */
+
+  /* Section */
+.title {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+  /* Search */
+.fa-location-dot {
+  padding: 14px 18px 16px 18px;
+  position: absolute;
+}
+#city {
+  padding: 14px 14px 14px 66px;
+  border: 0;
+}
+.search {
+  color: white;
+  background-color: #0065fc;
+  border: 1px solid #0065FC;
+  border-radius: 0px 10px 10px 0;
+  padding: 14px 16px 14px 16px;
+  position: absolute;
+  left: 270px;
+}
+.search-button {
+  position: absolute;
+  left: 269px;
+}
+.search-icon {
+  margin-left: -4px;
+}
+
+  /* Filters */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 75px;
+  margin: 30px 0 0;
+}
+.filters-form {
+  display: contents;
+}
+.checkbox {
+  display: none;
+}
+.checkbox:checked+label {
+  background-color: #DEEBFF;
+}
+.filters-list {
+  padding-right: 10px;
+  font-size: 17px;
+  border: 2px solid #D9D9D9;
+  border-radius: 25px;
+}
+.filters-icons {
+  color: #0065FC;
+  padding: 10px 10px 10px 10px;
+}
+
+  /* Info */
+.info {
+  display: flex;
+  align-items: center;
+}
+.info-bull {
+  color: #0065FC;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  /* Cards Marseille */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  display: block;
+  border: 1px solid black;
+  width: 30%;
+}
+.card > a {
+  text-decoration: none;
+  color: black;
+}
+.card > a > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.card-product {
+  padding: 10px;
+}
+.star {
+  display: flex;
+  flex-direction: row;
+  color: #0065FC;
+  padding: 0;
+}
