@@ -1,0 +1,90 @@
+/* Media mobile */
+@media (max-width: 767px) {
+  body {
+    margin: 20px !important;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .m-mobile {
+    margin: 10px !important;
+  }
+  .menu {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .menu-info {
+    width: 50%;
+    text-align: center;
+  }
+  .menu-info:hover {
+    color: #0065FC;
+    border-top: none !important;
+    border-bottom: 2px solid #0065FC;
+    padding: 19px;
+  }
+  .research {
+    display: none;
+  }
+  .form-search {
+    margin: 36px !important;
+  }
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filters-form {
+    display: flex;
+    min-width: 100% !important;
+  }
+  .filters-list {
+    min-width: 40%;
+    font-size: 11px !important;
+  }
+  .article-lodging {
+    flex-direction: column-reverse !important;
+  }
+  .lodging-cards {
+    justify-content: flex-start !important;
+  }
+  .lodging-card {
+    width: 95% !important;
+    margin: 20px !important;
+  }
+  .lodging-card > img {
+    padding: 0 !important;
+    min-width: 100% !important;
+  }
+  .btn-lodging {
+    display: none;
+  }
+  .aside-lodging-cards {
+    flex-direction: column !important;
+  }
+  .aside-lodging-card {
+    width: 88% !important;
+    margin: 20px !important;
+  }
+  .aside-lodging-card > img {
+    min-width: 42% !important;
+  }
+  .cards-activities {
+    flex-direction: column;
+  }
+  .card-activities {
+    width: 90% !important;
+  }
+  .card-activities > h4 {
+    padding: 15px !important;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer > div {
+    margin: 20px;
+  }
+}

@@ -1,24 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import "css/tablet.css";
+@import "css/mobile.css";
+@import '~@csstools/normalize.css';
 
-/* Body */
-
+/* Body details */
 body {
   margin: 50px;
+  /* min-width: 320px; */
+  max-width: 1400px;
+  font-family: "raleway", Times, sans-serif;
+  background-color: #F2F2F2;
 }
-
-li {
-  list-style-type: none;
-}
-/* Header */
-
-.head {
+header {
   display: flex;
   justify-content: space-between;
 }
-.logo-booki {
-  padding-top: 20px;
+a {
+  text-decoration: none;
+  color: black;
+}
+h1, h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+li {
+  list-style-type: none;
+}
+.fa-solid {
+  color: #0065FC;
+}
+.fa-location-dot {
+  padding: 14px 18px 16px 18px;
+  position: absolute;
+}
+.fa-magnifying-glass {
+  color: white !important;
+}
+.fa-star {
+  font-size: 12px;
+}
+.star {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+/* Header */
+.logo {
   width: 62px;
   height: 21px;
+  padding-top: 20px;
 }
 .menu {
   display: flex;
@@ -30,118 +61,229 @@ li {
   text-decoration: none;
   color: black;
 }
-.menu-info:focus {
-  border-top: 1px solid #0065FC;
+.menu-info:hover {
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
   padding: 19px;
 }
 
-/* Main */
-
-  /* Section */
-.title {
-  font-size: 22px;
-  margin-bottom: 0;
-}
-
-  /* Search */
-.fa-location-dot {
-  padding: 14px 18px 16px 18px;
-  position: absolute;
-}
-#city {
-  padding: 14px 14px 14px 66px;
-  border: 0;
-}
-.search {
-  color: white;
-  background-color: #0065fc;
-  border: 1px solid #0065FC;
-  border-radius: 0px 10px 10px 0;
-  padding: 14px 16px 14px 16px;
-  position: absolute;
-  left: 270px;
-}
-.search-button {
-  position: absolute;
-  left: 269px;
-}
-.search-icon {
-  margin-left: -4px;
-}
-
-  /* Filters */
-.filters {
+/* Footer */
+footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 75px;
-  margin: 30px 0 0;
-}
-.filters-form {
-  display: contents;
-}
-.checkbox {
-  display: none;
-}
-.checkbox:checked+label {
-  background-color: #DEEBFF;
-}
-.filters-list {
-  padding-right: 10px;
-  font-size: 17px;
-  border: 2px solid #D9D9D9;
-  border-radius: 25px;
-}
-.filters-icons {
-  color: #0065FC;
-  padding: 10px 10px 10px 10px;
-}
-
-  /* Info */
-.info {
-  display: flex;
-  align-items: center;
-}
-.info-bull {
-  color: #0065FC;
-  font-size: 16px;
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  border: 1px solid #D9D9D9;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-  /* Cards Marseille */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 50px;
 }
-.card {
-  display: block;
-  border: 1px solid black;
-  width: 30%;
-}
-.card > a {
-  text-decoration: none;
-  color: black;
-}
-.card > a > img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-.card-product {
-  padding: 10px;
-}
-.star {
-  display: flex;
-  flex-direction: row;
-  color: #0065FC;
-  padding: 0;
-}
+
+/* Main */
+  /* Article */
+    /* Search */
+    .form-search {
+      margin: 15px 0;
+    }
+    #city {
+      padding: 14px 24px 16px 50px;
+      border-style: hidden;
+    }
+    #city:focus {
+      outline: none;
+    }
+    .search {
+      color: white;
+      background-color: #0065fc;
+      border: 1px solid #0065FC;
+      border-radius: 0px 10px 10px 0;
+      padding: 14px 16px 14px 16px;
+    }
+    .btn-search {
+      position: absolute;
+      left: 269px;
+    }
+
+    /* Filters */
+    .filters {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 30px 0 0;
+    }
+    .filters > h3 {
+      max-width: 10%;
+    }
+    .filters-form {
+      display: flex;
+      justify-content: space-between;
+      max-width: 90%;
+    }
+    .checkbox {
+      display: none;
+    }
+    .checkbox:checked+label {
+      background-color: #DEEBFF;
+    }
+    .filters-list {
+      margin: 0 10px;
+      padding-right: 10px;
+      font-size: 17px;
+      border: 2px solid #D9D9D9;
+      border-radius: 25px;
+    }
+    .filters-list > i {
+      padding: 10px 10px 10px 10px;
+    }
+
+    /* Info */
+    .info {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .fa-info {
+      color: #0065FC;
+      font-size: 16px;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      padding: 5.5px;
+      border: 1px solid #D9D9D9;
+      border-radius: 100%;
+    }
+    .fa-info:before {
+      position: relative;
+      left: 7.1px;
+    }
+
+  /* Section Lodging */
+    /* Div Marseille */
+    .article-lodging {
+      display: flex;
+      justify-content: space-around;
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .lodging {
+      width: 66%;
+      height: 100%;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .lodging-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .lodging-card {
+      display: block;
+      margin: 15px 0;
+      width: 30%;
+      height: 210px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 20%);
+    }
+    .lodging-card > img {
+      height: 110px;
+      width: 95%;
+      padding: 5px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+    }
+    .lodging-card-product {
+      padding: 0 10px;
+    }
+    .lodging-card-product > h4, p, ul {
+      margin: 0;
+      padding-bottom: 5px;
+    }
+    .lodging-card-product > p {
+      font-size: 14px;
+    }
+    .btn-lodging {
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* Aside Marseille */
+    .aside-lodging {
+      width: 33%;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+    }
+    .aside-lodging-container {
+      padding-left: 10px;
+    }
+    .aside-lodging-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .aside-lodging-head > i {
+      margin-top: 10px;
+    }
+    .aside-lodging-card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      width: 100%;
+      height: 144px;
+      border-radius: 20px;
+      margin: 20px 0;
+      box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 20%);
+    }
+    .aside-lodging-card > img {
+      width: 43%;
+      height: 134px;
+      padding: 5px;
+      object-fit: cover;
+      border-radius: 20px 0 0 20px;
+    }
+    .aside-lodging-card-product {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 0 10px;
+    }
+    .aside-lodging-card-product > ul,
+    .aside-lodging-card-product-details > h4, p {
+      margin: 0;
+      padding-bottom: 5px;
+    }
+    .aside-lodging-card-product-details > p {
+      font-size: 14px;
+    }
+
+  /* Section Activities */
+  .section-activities {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .cards-activities {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .card-activities {
+    margin: 20px;
+    height: 444.51px;
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 20%);
+  }
+  .card-activities > img {
+    height: 388.51px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+  .card-activities > h4 {
+    margin: 0;
+    padding: 5% 15px;
+  }

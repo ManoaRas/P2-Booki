@@ -1,0 +1,54 @@
+/* Media tablet */
+@media (min-width: 768px) {
+  .research-icon {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .filters {
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+    max-width: 100%;
+  }
+  .filters > h3 {
+    max-width: 8% !important;
+  }
+  .filters-form {
+    flex-wrap: wrap !important;
+    max-width: 92% !important;
+    justify-content: flex-start !important;
+  }
+  .filters-list {
+    max-width: 35%;
+    margin: 10px !important;
+    font-size: 14px !important;
+  }
+  .article-lodging {
+    display: flex;
+    flex-direction: column;
+  }
+  .lodging {
+    width: 95% !important;
+  }
+  .aside-lodging {
+    display: flex;
+    width: 95% !important;
+  }
+  .aside-lodging-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  .aside-lodging-card {
+    width: 30% !important;
+  }
+  .aside-lodging-card > img {
+    min-width: 33% !important;
+  }
+  .card-activities {
+    height: 267px !important;
+  }
+  .card-activities > img {
+    height: 200px !important;
+  }
+}
