@@ -3,6 +3,9 @@
   .research-icon {
     display: none;
   }
+  .article-lodging {
+    background-color: #F2F2F2;
+  }
 }
 @media (max-width: 991px) {
   .filters {

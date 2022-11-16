@@ -60,6 +60,9 @@
   .btn-lodging {
     display: none;
   }
+  .aside-lodging {
+    background-color: #F2F2F2;
+  }
   .aside-lodging-cards {
     flex-direction: column !important;
   }
